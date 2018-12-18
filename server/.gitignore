@@ -1,2 +1,5 @@
 # dependencies
 /node_modules
+
+# secret key file
+/config/keys.js
