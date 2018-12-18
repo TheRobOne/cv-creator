@@ -24,6 +24,10 @@ mongoose
 //body parser middleware
 app.use(bodyParser.json());
 
+//route files
+let cv = require('./routes/cv');
+app.use('/cv', cv);
+
 app.get('/', (req, res, next) => res.send('Hello World!'))
 
 app.listen(port, () => console.log(`App is listening on port ${port}`))
